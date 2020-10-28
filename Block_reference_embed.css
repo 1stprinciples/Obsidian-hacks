@@ -1,0 +1,27 @@
+/* I added this - Code for changing the appearance of 
+block reference embeds */
+
+/* Adjust padding on the embed */
+.markdown-embed .markdown-preview-view { /* the padding */
+    padding: 0px 0px 0px 0px; /* up right down left */
+}
+
+/* Adjusting the link icon in the embed */
+.markdown-embed-link, .file-embed-link {
+    position: absolute;
+    top: 0em;
+    right: -1em;
+    color: var(--block-embed-link-icon);
+    cursor: pointer;
+}
+
+.markdown-preview-view .markdown-embed-content p:first-child {
+    margin-top: 0px;
+    padding-left: 0px;
+}
+.markdown-preview-view .markdown-embed, .markdown-preview-view .file-embed {
+    border-top: 0px solid var(--background-modifier-border);
+    border-bottom: 0px solid var(--background-modifier-border);
+    padding: 0px 0;
+    margin: 0px 0;
+}
