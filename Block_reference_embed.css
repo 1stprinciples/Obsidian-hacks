@@ -15,13 +15,20 @@ block reference embeds */
     cursor: pointer;
 }
 
-.markdown-preview-view .markdown-embed-content p:first-child {
-    margin-top: 0px;
-    padding-left: 0px;
-}
+
+
+/* Removing the top and bottom lines */
 .markdown-preview-view .markdown-embed, .markdown-preview-view .file-embed {
     border-top: 0px solid var(--background-modifier-border);
     border-bottom: 0px solid var(--background-modifier-border);
     padding: 0px 0;
     margin: 0px 0;
+}
+
+
+/* The following code has to be further improved :) */
+/* Removing the padding for the first child */
+.markdown-preview-view .markdown-embed-content p:first-child {
+    margin-top: 0px;
+    padding-left: 0px;
 }
