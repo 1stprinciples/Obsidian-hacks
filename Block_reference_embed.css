@@ -32,3 +32,27 @@ block reference embeds */
     margin-top: 0px;
     padding-left: 0px;
 }
+
+
+/* Removing duplication of bullets when block referencing a list item
+Parent inside a bullet list */
+li .markdown-embed ul {
+    position: relative;
+    margin-left: 0px;
+    padding-left: 0px; 
+}
+
+/* Child inside a bullet list */
+li .markdown-embed ul ul   {
+    position: relative;
+    margin-left: 0px;
+    padding-left: 40px; 
+}
+
+/* Task list inside an embed */
+li .markdown-embed li.task-list-item {
+    position: relative;
+    margin-left: 0px;
+    padding-left: 0px;
+
+}
