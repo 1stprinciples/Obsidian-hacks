@@ -29,14 +29,6 @@ block reference embeds */
 }
 
 
-/* The following code has to be further improved :) */
-/* Removing the padding for the first child */
-.markdown-preview-view .markdown-embed-content p:first-child {
-    margin-top: 0px;
-    padding-left: 0px;
-}
-
-
 /* Removing duplication of bullets when block referencing a list item
 Parent inside a bullet list */
 li .markdown-embed ul {
